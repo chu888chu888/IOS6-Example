@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fKZ-96-4no"/>
+                        <viewControllerLayoutGuide type="bottom" id="R3P-Sp-gb8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="xng-ur-RPf">
+                                <rect key="frame" x="18" y="50" width="118" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="114" id="3U6-Fb-Dcq"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="ChangeNumber:" destination="2" eventType="valueChanged" id="yKX-12-5dS"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="北京欢迎您" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bO3-gg-YgV">
+                                <rect key="frame" x="160" y="59" width="85" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zcd-4r-ueF">
+                                <rect key="frame" x="29" y="98" width="10" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Zcd-4r-ueF" firstAttribute="top" secondItem="3" secondAttribute="top" constant="98" id="3LQ-Tc-s9f"/>
+                            <constraint firstAttribute="trailing" secondItem="bO3-gg-YgV" secondAttribute="trailing" constant="75" id="BAt-Bk-f3V"/>
+                            <constraint firstItem="bO3-gg-YgV" firstAttribute="bottom" secondItem="xng-ur-RPf" secondAttribute="bottom" id="RIn-bp-XrO"/>
+                            <constraint firstItem="xng-ur-RPf" firstAttribute="top" secondItem="3" secondAttribute="top" constant="50" id="XRg-yk-xlk"/>
+                            <constraint firstItem="Zcd-4r-ueF" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="29" id="ceU-4e-Z1m"/>
+                            <constraint firstItem="xng-ur-RPf" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" id="mfq-wk-9Mf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="number" destination="Zcd-4r-ueF" id="ihX-2Z-cUe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="101" y="-122"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
