@@ -7,7 +7,7 @@
 //
 
 #import "SecondViewController.h"
-
+#import "ThirdViewController.h"
 @interface SecondViewController ()
 
 @end
@@ -19,6 +19,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        self.title=@"Second";
     }
     return self;
 }
@@ -47,6 +48,18 @@
     backbutton.backgroundColor=[UIColor redColor];
     [backbutton addTarget:self action:@selector(backvc) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:backbutton];
+    
+    UIButton *thirdButton=[UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [thirdButton setTitle:@"third" forState:UIControlStateNormal];
+    [thirdButton setFrame:CGRectMake(90, 200, 140, 35)];
+    thirdButton.backgroundColor=[UIColor redColor];
+    [thirdButton addTarget:self action:@selector(gotoThird) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:thirdButton];
+}
+-(void)gotoThird
+{
+    ThirdViewController *thirdView=[[ThirdViewController alloc] init];
+    [self.navigationController pushViewController:thirdView animated:YES];
 }
 -(void) hidevc
 {

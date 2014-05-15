@@ -21,6 +21,7 @@
 		B9319CCC19235B8A0072A032 /* NavigationbarDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B9319CCB19235B8A0072A032 /* NavigationbarDemoTests.m */; };
 		B9319CD819235F5F0072A032 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9319CD619235F5F0072A032 /* RootViewController.m */; };
 		B9319CDC1923666C0072A032 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9319CDB1923666C0072A032 /* SecondViewController.m */; };
+		B98847ED192488CF00EE531C /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B98847EC192488CF00EE531C /* ThirdViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		B9319CD619235F5F0072A032 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		B9319CDA1923666C0072A032 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SecondViewController.h; path = ../SecondViewController.h; sourceTree = "<group>"; };
 		B9319CDB1923666C0072A032 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SecondViewController.m; path = ../SecondViewController.m; sourceTree = "<group>"; };
+		B98847EB192488CF00EE531C /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		B98847EC192488CF00EE531C /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +135,8 @@
 				B9319CAF19235B8A0072A032 /* InfoPlist.strings */,
 				B9319CB219235B8A0072A032 /* main.m */,
 				B9319CB419235B8A0072A032 /* NavigationbarDemo-Prefix.pch */,
+				B98847EB192488CF00EE531C /* ThirdViewController.h */,
+				B98847EC192488CF00EE531C /* ThirdViewController.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -250,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B9319CDC1923666C0072A032 /* SecondViewController.m in Sources */,
+				B98847ED192488CF00EE531C /* ThirdViewController.m in Sources */,
 				B9319CB719235B8A0072A032 /* AppDelegate.m in Sources */,
 				B9319CB319235B8A0072A032 /* main.m in Sources */,
 				B9319CD819235F5F0072A032 /* RootViewController.m in Sources */,
@@ -449,6 +455,7 @@
 				B9319CD119235B8A0072A032 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B9319CD219235B8A0072A032 /* Build configuration list for PBXNativeTarget "NavigationbarDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -457,6 +464,7 @@
 				B9319CD419235B8A0072A032 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
