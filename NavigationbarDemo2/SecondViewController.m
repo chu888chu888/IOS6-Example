@@ -55,6 +55,15 @@
     thirdButton.backgroundColor=[UIColor redColor];
     [thirdButton addTarget:self action:@selector(gotoThird) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:thirdButton];
+    
+    //自定义titleView
+    UIView *testView=[[UIView alloc] initWithFrame:CGRectMake(0, 0, 80, 30)];
+    testView.backgroundColor=[UIColor orangeColor];
+    self.navigationItem.titleView=testView;
+    //自定义rightItem
+    UIBarButtonItem *rightItem=[[UIBarButtonItem alloc] initWithTitle:@"自定义" style:UIBarButtonItemStyleBordered target:self action:nil];
+    self.navigationItem.rightBarButtonItem=rightItem;
+    
 }
 -(void)gotoThird
 {

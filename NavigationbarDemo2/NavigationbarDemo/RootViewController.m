@@ -39,12 +39,28 @@
     UIBarButtonItem *leftItem=[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemBookmarks target:self action:@selector(leftItemEvent)];
     self.navigationItem.leftBarButtonItem=leftItem;
     
+    UIButton *item=[UIButton buttonWithType:UIButtonTypeInfoLight];
+    [item setTitle:@"  test" forState:UIControlStateNormal];
+    //item.backgroundColor=[UIColor redColor];
+    [item setFrame:CGRectMake(0, 0, 80, 35)];
+    [item addTarget:self action:@selector(rightItemEvent) forControlEvents:UIControlEventTouchUpInside];
+    
+    UIBarButtonItem *rightItem=[[UIBarButtonItem alloc] initWithCustomView:item];
+    self.navigationItem.rightBarButtonItem=rightItem;
+    
+    
+}
+-(void) rightItemEvent
+{
+    UIActionSheet *actionSheet=[[UIActionSheet alloc] initWithTitle:@"这是一个测试" delegate:self cancelButtonTitle:@"取消" destructiveButtonTitle:nil otherButtonTitles:@"确定", nil];
+    [actionSheet showInView:self.view];
 }
 -(void) leftItemEvent
 {
     UIAlertView *alertView=[[UIAlertView alloc] initWithTitle:@"study" message:@"study" delegate:nil cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];
     [alertView show];
 }
+
 -(void) pushvc
 {
     SecondViewController *secondVC=[[SecondViewController alloc] init];
