@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>E8CD749A-4880-4CDF-8248-9077A35C5EC8</string>
+	<key>IDESourceControlProjectName</key>
+	<string>TabBarDemo2</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>8070E57B-8D40-4432-B040-12A7D96F7519</key>
+		<string>https://github.com/chu888chu888/IOS6-Example.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>TabBarDemo2/TabBarDemo2.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>8070E57B-8D40-4432-B040-12A7D96F7519</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/chu888chu888/IOS6-Example.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>8070E57B-8D40-4432-B040-12A7D96F7519</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>8070E57B-8D40-4432-B040-12A7D96F7519</string>
+			<key>IDESourceControlWCCName</key>
+			<string>IOS6-Example</string>
+		</dict>
+	</array>
+</dict>
+</plist>
