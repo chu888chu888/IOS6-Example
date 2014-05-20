@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-
+#import "VC1ViewController.h"
+#import "VC2ViewController.h"
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -16,6 +17,46 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    VC1ViewController *vc1=[[VC1ViewController alloc] init];
+    vc1.title=@"home";
+    //vc1.view.backgroundColor=[UIColor redColor];
+    UITabBarItem *firstItem=[[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemFavorites tag:1];
+    firstItem.badgeValue=@"New";
+    vc1.tabBarItem=firstItem;
+    UINavigationController *vc1Nav=[[UINavigationController alloc] initWithRootViewController:vc1];
+    
+    
+    
+    VC2ViewController *vc2=[[VC2ViewController alloc] init];
+    vc2.title=@"news";
+    //vc2.view.backgroundColor=[UIColor yellowColor];
+    UITabBarItem *secondItem=[[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemDownloads tag:2];
+    vc2.tabBarItem=secondItem;
+    
+    UIViewController *vc3=[[UIViewController alloc] init];
+    vc3.title=@"history";
+    vc3.view.backgroundColor=[UIColor blueColor];
+    UITabBarItem *thirdItem=[[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemFeatured tag:3];
+    vc3.tabBarItem=thirdItem;
+    
+    UIViewController *vc4=[[UIViewController alloc] init];
+    vc4.title=@"search";
+    vc4.view.backgroundColor=[UIColor orangeColor];
+    UITabBarItem *foundItem=[[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemSearch tag:4];
+    vc4.tabBarItem=foundItem;
+    
+    UIViewController *vc5=[[UIViewController alloc] init];
+    vc5.title=@"setting";
+    vc5.view.backgroundColor=[UIColor redColor];
+    UITabBarItem *fiveItem=[[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemMostRecent tag:5];
+    vc5.tabBarItem=fiveItem;
+    
+    NSArray *viewControllers=@[vc1Nav,vc2,vc3,vc4,vc5];
+    UITabBarController *tabBarController=[[UITabBarController alloc] init];
+    tabBarController.viewControllers=viewControllers;
+    self.window.rootViewController=tabBarController;
+    
     return YES;
 }
 
