@@ -7,9 +7,10 @@
 //
 
 #import "VC1ViewController.h"
-
+#import "VC3ViewController.h"
 @interface VC1ViewController ()
 
+@property (weak, nonatomic) IBOutlet UIButton *btnNes;
 @end
 
 @implementation VC1ViewController
@@ -21,6 +22,11 @@
         // Custom initialization
     }
     return self;
+}
+- (IBAction)btnNewsEvent:(id)sender {
+    NSLog(@"sss");
+    VC3ViewController *VC3=[[VC3ViewController alloc] init];
+    [self.navigationController pushViewController:VC3 animated:YES];
 }
 
 - (void)viewDidLoad
