@@ -25,7 +25,7 @@
     }
     return self;
 }
--(void) loadView
+- (void)InitView
 {
     UIView *view=[[UIView alloc] initWithFrame:[UIScreen mainScreen].applicationFrame];
     self.view=view;
@@ -36,6 +36,11 @@
     _tableView.rowHeight=80;
     _tableView.separatorStyle=UITableViewCellSeparatorStyleNone;
     [self.view addSubview:_tableView];
+}
+
+-(void) loadView
+{
+    [self InitView];
     
 }
 - (void)viewDidLoad
