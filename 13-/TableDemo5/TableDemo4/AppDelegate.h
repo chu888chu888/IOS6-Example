@@ -1,5 +1,5 @@
 //
-//  SimpleTableViewController.h
+//  AppDelegate.h
 //  TableDemo4
 //
 //  Created by chuguangming on 14-6-5.
@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SimpleTableViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate>
 
-
+@property (strong, nonatomic) UIWindow *window;
 
 @end

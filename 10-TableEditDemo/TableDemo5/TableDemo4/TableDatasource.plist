@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Image</key>
+	<array>
+        <string>th.jpeg</string>
+        <string>head2.jpg</string>
+        <string>head3.jpg</string>
+        <string>head4.jpg</string>
+        <string>head.gif</string>
+    </array>
+	<key>Age</key>
+	<array>
+		<string>66</string>
+		<string>33</string>
+		<string>34</string>
+		<string>31</string>
+		<string>31</string>
+	</array>
+	<key>Name</key>
+	<array>
+		<string>楚广明</string>
+		<string>俞炯</string>
+		<string>王力印</string>
+		<string>小谢</string>
+		<string>小贾</string>
+	</array>
+    
+    <key>GuestImage</key>
+	<array>
+        <string>th.jpeg</string>
+        <string>th.jpeg</string>
+        <string>th.jpeg</string>
+        <string>th.jpeg</string>
+        <string>th.jpeg</string>
+    </array>
+    
+    
+</dict>
+</plist>
